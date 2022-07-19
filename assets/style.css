@@ -1,0 +1,493 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 80%;
+}
+
+body {
+    position: relative;
+}
+
+/* Headings and Fonts */
+h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+h2, h3, h4, h6, p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Body Styling */
+header {
+    padding: 1.25rem;
+    width: fit-content;
+}
+
+.logo {
+    width: fit-content;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    margin: 30px auto 30px 40px;
+}
+
+.title span{
+    color: #D7598B;
+}
+
+.hero{
+    width: 315px;
+    height: 350px;
+    margin: 10px auto 50px auto; 
+}
+
+.hero img {
+    width: 315px;
+    height: 350px;
+    box-shadow: 0px 1px 60px rgba(172, 125, 84, 0.33);
+    border-radius: 30px;
+    position: absolute;
+}
+
+.hero-bg {
+    width: 315px;
+    height: 350px;
+    margin: 10px auto 50px auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 6.37483e-10) 78.65%, #040101 96.87%);
+    box-shadow: 0px 1px 60px rgba(97, 201, 252, 0.33);
+    border-radius: 30px;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+}
+
+.hero-text span {
+    float: right;
+}
+/* IMAGE CSS ENDS */
+
+.textUnder h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h2 > span:first-child {
+    color: #fdd835;
+}
+
+h2 > span:nth-child(2){
+    color: #D7598B;
+}
+
+h2 > span:nth-child(3){
+    color: #706DEC;
+}
+
+.longLine{
+    width: 183px;
+    height: 1px;
+    background-color: rgba(8, 8, 49, 0.3);
+    margin: 20px auto 10px auto;
+}
+
+/* ROUND IMAGES CSS */
+.palettes img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.palettes {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+}
+
+.palettes .img1, .img2, .img3, .img4{
+    /* border-bottom: 2px solid #080831;
+    border-width: 28px; */
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 45px 22px -20px rgba(8, 8, 49, 0.9)
+    ;
+    -webkit-box-shadow: 1px 45px 22px -20px rgba(8, 8, 49, 0.9)
+    ;
+}
+
+/* FOOTER CSS */
+footer {
+    position: fixed;
+    width: 100%;
+    height: 6.125rem;
+    left: 0;
+    bottom: 0;
+    background: #040101;
+    padding: 20px 40px;
+}
+
+.mainIcons {
+    display: flex;
+   justify-content: space-between;
+   margin: auto;
+}
+
+.mainIcons img {
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.mainIcons a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* END OF FOOTER */
+
+
+
+/* BEGINNING OF GALLERY PAGE */
+#gallery {
+    background-color: #F8E6EF;
+    padding-top: 10px;
+    position: relative;
+    display: none;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    display: inline;
+    border-radius: 30px;
+}
+
+.search {
+    width: 17rem;
+    height: 3rem;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    margin: auto auto auto 110px;
+    border-radius: 30px;
+}
+
+.search button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.search img {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    width: 1.8rem;
+    opacity: 0.4;
+}
+
+.divider {
+    width: 300px;
+    height: 1px;
+    background-color: #040101;
+    opacity: 0.8;
+    margin: 5px auto 30px auto;
+}
+
+.categories {
+    margin: auto;
+    text-align: center;
+}
+
+.categories p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.categories span {
+    font-size: 0.8rem;
+    color: #D7598B;
+}
+
+.allImages {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.content{
+    width: 11.5rem;
+    height: 13rem;
+    margin: 10px auto 50px auto; 
+} 
+.content img {
+    width: 11.5rem;
+    height: 13rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 60px rgba(172, 125, 84, 0.33);
+    position: absolute;
+}
+.content-bg{
+    width: 11.5rem;
+    height: 13rem;
+    margin: 10px auto 50px auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 6.37483e-10) 70.83%, #000000 93.75%);    position: relative;
+    border-radius: 8px;
+}
+.content-text{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 85%;
+    color: white;
+    font-size: 10px;
+}
+
+.content-text span {
+    float: right;
+}
+
+
+/* BEGINNING OF ABOUT PAGE */
+#about {
+    background-color: #70534A;
+    height: 100vh;
+   display: none;
+}
+
+.aboutHeader {
+    background-color: #ffffff;
+    padding: 15px 50px 15px 50px;
+}
+
+.aboutHeader h4 {
+font-size: 12px;
+font-weight: 700;
+}
+
+.aboutHeader h1 {
+color: #D7598B;
+/* border: 2px solid #DC3790 */
+}
+
+.aboutHeader p {
+opacity: 0.7;
+}
+
+
+/* About Body Styling */
+
+.aboutFirstSection {
+    border: 1px solid #D7598B;
+    margin: 50px auto 50px auto;
+    width: 28rem;
+    height: 28rem;
+    box-shadow: 1px 1px 15px #0000005f;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* step styling */
+.step {
+    color: #fff;
+    margin: 0 auto;
+  }
+  
+  .title {
+    line-height: 2em;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .caption {
+    font-size: 1em;
+  }
+  
+  .step + .step {
+    margin-top: 0em
+  }
+
+  .SecondChild{
+    margin-left: 14em;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 110px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #D7598B;
+    clip-path: polygon(19% 12%, 91% 13%, 100% 0, 100% 100%, 91% 83%, 18% 83%, 2% 96%, 11% 80%, 11% 0);
+
+}
+
+  .otherChild{
+    width: 13.7rem;
+    margin-right: 0;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 110px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #D7598B;
+    clip-path: polygon(9% 13%, 84% 13%, 92% 0, 92% 82%, 100% 100%, 81% 82%, 9% 81%, 0 94%, 0 0);
+
+
+  }
+  
+  .step > div:first-child {
+    position: static;
+    height: 0;
+  }
+  
+  /* .step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+  } */
+  
+  .circle {
+    background: #fff;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    color: #000;
+    box-shadow: 0 0 0 3px #fff;
+    margin: -3px auto 0 auto;
+  }
+  
+  /* Vertical Line */
+  .circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: -60px;
+    right: 50%;
+    bottom: 1px;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    transform: scale(1, 7);
+    transform-origin: 50% -100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .step:last-child .circle:after {
+    display: none
+  }
+  
+  .step.step-active {
+    color: #D7598B;
+  }
+  .step.step-active .circle {
+    background-color: #D7598B;
+  }
+
+  .aboutFirstSection {
+    overflow-y: scroll;
+   scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+   scroll-behavior: smooth;
+  }
+  
+  .aboutFirstSection::-webkit-scrollbar { /* WebKit */
+      width: 0;
+      height: 0;
+  }
+
+  .aboutFirstSection img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.1;
+    border: 2px solid #fff;    
+    margin: 20px;
+  }
+
+
+  .aboutFirstSection i {
+    font-size: 1rem;
+    padding-right: 3px;
+  }
+
+  .aboutFirstSection p {
+    line-height: 17px;
+
+  }
+
+  .aboutImg {
+    position: fixed;
+    width: 28rem;
+    height: 28rem; 
+}
+
+.aboutImg {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+/* Newsletter Styling */
+
+.aboutNewsletter {
+    background-color: #fff;
+    padding: 30px;
+    width: 28rem;
+    margin: auto auto 100px auto;
+    box-shadow: 1px 1px 20px #040101;
+}
+
+.aboutNewsletter h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-family: cursive;
+    letter-spacing: 0.6px;
+}
+
+.aboutNewsletter p{
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    padding-bottom: 10px;
+}
+
+.aboutNewsletter input {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 15rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.aboutNewsletter button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 10px;
+    background-color: #D7598B;
+}
+
